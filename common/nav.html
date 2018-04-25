@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../static/js/jquery.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <script src="../static/js/bootstrap.js"></script>
+    <style>
+        body{
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        a{
+            color: #999;
+        }
+        
+        .red_color{
+            color:#C40000 !important
+        }
+
+        .float_right{
+            float: right;
+        }
+
+        nav.top {
+            background-color: #f2f2f2;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e7e7e7;
+            padding-right: 60px;
+            padding-left: 60px
+        }
+        
+        nav.top span{
+            color: #999;
+        }
+
+        nav.top a {
+            color: #999;
+            margin: 0 10px 0 10px
+        }
+
+        nav.top a:hover {
+            color: #C40000;
+        }
+        
+        .has_jiantou {
+            position: relative;
+        }
+        .has_jiantou::after {
+           border: 3px solid transparent;
+           border-top:3px solid #999;
+           width: 0;
+           height: 0;
+           position: absolute;
+           content: "";
+           top:4.5px;
+           right:-10px;
+        }
+    </style>
+</head>
+<body>  
+    <nav class="top">
+        <a href="#">
+            <span class="glyphicon glyphicon-home red_color"></span>
+            天猫首页
+        </a>
+
+        <span>喵，欢迎来到天猫</span>
+
+        <a href="#">请登陆</a>
+
+        <a href="#">免费注册</a>
+
+        <span class="float_right">
+            <a href="#" class="has_jiantou">我的淘宝</a>
+
+            <a href="#" >
+                <span class="glyphicon glyphicon-shopping-cart red_color"></span>
+                购物车0件
+            </a>
+
+            <a href="#" class="has_jiantou">收藏夹</a>
+
+            <span>|</span>
+
+            <a href="">
+                <span class="glyphicon glyphicon-phone red_color"></span>
+                手机版
+            </a>
+
+            <a href="#">淘宝网</a>
+
+            <a href="#" class="has_jiantou">商家支持</a>
+            
+            <a href="#" class="has_jiantou">
+                <span class="glyphicon glyphicon-list red_color"></span>
+                网站导航
+            </a>
+        </span>
+    </nav>
+
+</body>
+</html>
