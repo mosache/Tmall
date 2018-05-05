@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="../static/css/bootstrap.css">
     <script src="../static/js/bootstrap.js"></script>
     <style>
-        #footer{
+        /* footer_top start */
+
+        #footer {
             margin: 0px 200px;
         }
 
@@ -50,11 +52,31 @@
             width: 250px;
             border-left: 1px solid rgba(153, 153, 153, 0.507);
         }
-        
-        #footer .menu{
+
+        #footer .menu {
             margin: 0 20px;
+            padding-bottom: 40px;
+            background-image: url('https://img.alicdn.com/tfs/TB1dl28RXXXXXbzaFXXXXXXXXXX-136-50.png');
+            background-repeat: no-repeat;
+            background-size: 68px 25px;
+            background-position: 12px bottom;
         }
-       #footer .menu dl{
+
+        #footer .menu::before {
+            clear: both;
+            display: table;
+            content: '';
+            line-height: 0;
+        }
+
+        #footer .menu::after {
+            clear: both;
+            display: table;
+            content: '';
+            line-height: 0;
+        }
+
+        #footer .menu dl {
             float: left;
             width: 20%;
             font-size: 16px;
@@ -70,6 +92,62 @@
             text-decoration: none;
         }
 
+        /* footer_top end */
+
+        /* copyright start */
+
+        .copyright {
+            border-top: 1px solid #c40000;
+            background-color: #000;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 40px;
+        }
+
+        .copyright .bottom-a {
+            margin-top: 20px;
+        }
+
+        .copyright a {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .copyright a:first-child {
+            margin-left: 0px;
+        }
+
+        .copyright .bottom-a a {
+            display: inline-block;
+            border-right: 1px solid #fff;
+            padding-right: 10px;
+        }
+
+        .copyright .bottom-a a:last-child {
+            border-right: none;
+        }
+
+        .xuke {
+            color: #999;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .banquan {
+            color: #999;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .copyright-img img {
+            display: inline-block;
+        }
+
+        .copyright-img img:last-child {
+            margin-left:10px; 
+        }
+        /* copyright end */
     </style>
 </head>
 
@@ -91,42 +169,126 @@
         <div class="menu">
             <dl>
                 <dt>购物指南</dt>
-                <dd><a href="#">免费注册</a></dd>
-                <dd><a href="#">开通支付宝</a></dd>
-                <dd><a href="#">支付宝充值</a></dd>
+                <dd>
+                    <a href="#">免费注册</a>
+                </dd>
+                <dd>
+                    <a href="#">开通支付宝</a>
+                </dd>
+                <dd>
+                    <a href="#">支付宝充值</a>
+                </dd>
             </dl>
 
             <dl>
                 <dt>天猫保障</dt>
-                <dd><a href="#">发票保障</a></dd>
-                <dd><a href="#">售后规则</a></dd>
-                <dd><a href="#">缺货赔付</a></dd>
+                <dd>
+                    <a href="#">发票保障</a>
+                </dd>
+                <dd>
+                    <a href="#">售后规则</a>
+                </dd>
+                <dd>
+                    <a href="#">缺货赔付</a>
+                </dd>
             </dl>
 
             <dl>
                 <dt>支付方式</dt>
-                <dd><a href="#">快捷支付</a></dd>
-                <dd><a href="#">信用卡</a></dd>
-                <dd><a href="#">蚂蚁花呗</a></dd>
-                <dd><a href="#">货到付款</a></dd>
+                <dd>
+                    <a href="#">快捷支付</a>
+                </dd>
+                <dd>
+                    <a href="#">信用卡</a>
+                </dd>
+                <dd>
+                    <a href="#">蚂蚁花呗</a>
+                </dd>
+                <dd>
+                    <a href="#">货到付款</a>
+                </dd>
             </dl>
 
             <dl>
                 <dt>商家服务</dt>
-                <dd><a href="#">商家入驻</a></dd>
-                <dd><a href="#">商家中心</a></dd>
-                <dd><a href="#">天猫智库</a></dd>
-                <dd><a href="#">天猫规则</a></dd>
-                <dd><a href="#">物流服务</a></dd>
-                <dd><a href="#">喵言喵语</a></dd>
-                <dd><a href="#">运营服务</a></dd>
+                <dd>
+                    <a href="#">商家入驻</a>
+                </dd>
+                <dd>
+                    <a href="#">商家中心</a>
+                </dd>
+                <dd>
+                    <a href="#">天猫智库</a>
+                </dd>
+                <dd>
+                    <a href="#">天猫规则</a>
+                </dd>
+                <dd>
+                    <a href="#">物流服务</a>
+                </dd>
+                <dd>
+                    <a href="#">喵言喵语</a>
+                </dd>
+                <dd>
+                    <a href="#">运营服务</a>
+                </dd>
             </dl>
 
             <dl>
-                    <dt>手机天猫</dt>
-                    <dd><img src="https://img.alicdn.com/tfscom/TB1EfOTPFXXXXcIXpXXwu0bFXXX.png" style="width: 105px;height: 105px;;"></dd>
-                </dl>
+                <dt>手机天猫</dt>
+                <dd>
+                    <img src="https://img.alicdn.com/tfscom/TB1EfOTPFXXXXcIXpXXwu0bFXXX.png" style="width: 105px;height: 105px;;">
+                </dd>
+            </dl>
         </div>
+
+        <div class="copyright">
+            <div class="top-a">
+                <a href="#">关于天猫</a>
+                <a href="#">帮助中心</a>
+                <a href="#">开放平台</a>
+                <a href="#">诚聘英才</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站合作</a>
+                <a href="#">法律声明</a>
+                <a href="#">知识产权</a>
+                <a href="#">廉正举报</a>
+            </div>
+
+            <div class="bottom-a">
+                <a href="#">阿里巴巴集团</a>
+                <a href="#">淘宝网</a>
+                <a href="#">天猫</a>
+                <a href="#">聚划算</a>
+                <a href="#">全球速卖通</a>
+                <a href="#">阿里巴巴国际交易市场</a>
+                <a href="#">1688</a>
+                <a href="#">阿里妈妈</a>
+                <a href="#">阿里旅行·去啊</a>
+                <a href="#">阿里云计算</a>
+                <a href="#">阿里通信</a>
+                <a href="#">YunOS</a>
+                <a href="#">阿里旅行·去啊</a>
+                <a href="#">万网</a>
+                <a href="#">高德</a>
+                <a href="#">优视</a>
+                <a href="#">友盟</a>
+                <a href="#">虾米</a>
+                <a href="#">天天动听</a>
+                <a href="#">来往</a>
+                <a href="#">钉钉</a>
+                <a href="#">支付宝</a>
+            </div>
+
+            <p class="xuke">增值电信业务经营许可证： 浙B2-20110446 网络文化经营许可证：浙网文[2015]0295-065号 互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p>
+            <p class="banquan">© 2003-2016 TMALL.COM 版权所有</p>
+
+            <div class="copyright-img">
+                <img src="http://how2j.cn/tmall/img/site/copyRight1.jpg" width="73" height="30">
+                <img src="http://how2j.cn/tmall/img/site/copyRight2.jpg" width="73" height="30">
+            </div>
+        </div>
+
 
     </div>
 </body>
